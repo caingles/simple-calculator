@@ -67,11 +67,15 @@
 }
 
 .div16 {
-  grid-area: 6 / 2 / 7 / 4;
+  grid-area: 6 / 2 / 7 / 3;
 }
 
 .div17 {
   grid-area: 3 / 4 / 7 / 5;
+}
+
+.div18 {
+  grid-area: 6 / 3 / 7 / 4;
 }
 
 .container-calculator {
