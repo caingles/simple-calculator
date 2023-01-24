@@ -32,3 +32,8 @@ addCharacters.forEach((element) => {
     }
   });
 });
+
+equal.addEventListener("click", () => {
+  showResult.textContent = eval(operation);
+  operation = "";
+});
