@@ -1,6 +1,7 @@
 const equal = document.querySelector("#equal");
 const showResult = document.querySelector("#showResult");
 const addCharacters = document.querySelectorAll(".add");
+const btnDelete = document.querySelector("#delete");
 
 let operation = "";
 let continueOperation = true;
@@ -31,6 +32,15 @@ addCharacters.forEach((element) => {
       showResult.textContent = operation;
     }
   });
+});
+
+btnDelete.addEventListener("click", () => {
+  if (operation === "") {
+    return (operation = "");
+  } else {
+    operation = operation.substring(0, operation.length - 1);
+    showResult.textContent = operation;
+  }
 });
 
 equal.addEventListener("click", () => {
