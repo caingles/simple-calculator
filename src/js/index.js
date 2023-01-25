@@ -28,6 +28,8 @@ addCharacters.forEach((element) => {
         element.textContent == "/")
     ) {
       operation = operation.substring(0, operation.length - 1);
+      operation += element.textContent;
+      showResult.textContent = operation;
     } else {
       operation += element.textContent;
       showResult.textContent = operation;
