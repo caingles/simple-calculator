@@ -2,6 +2,7 @@ const equal = document.querySelector("#equal");
 const showResult = document.querySelector("#showResult");
 const addCharacters = document.querySelectorAll(".add");
 const btnDelete = document.querySelector("#delete");
+const deleteAll = document.querySelector("#delete-all");
 
 let operation = "";
 let continueOperation = true;
@@ -43,7 +44,12 @@ btnDelete.addEventListener("click", () => {
   }
 });
 
+deleteAll.addEventListener("click", () => {
+  operation = "";
+  showResult.textContent = operation;
+});
+
 equal.addEventListener("click", () => {
   showResult.textContent = eval(operation);
-  operation = "";
+  operation = eval(operation);
 });
